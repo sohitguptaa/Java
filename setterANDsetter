@@ -1,0 +1,72 @@
+package Core_Java;
+class rectangle{
+    int length;
+    int Breadth;
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setBreadth(int breadth) {
+        Breadth = breadth;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public int getBreadth() {
+        return Breadth;
+    }
+}
+
+public class setterANDsetter {
+    private String name;
+    private int age;
+
+    public void setname(String s){
+        name=s;
+    }
+    public String getname(){
+        return name;
+    }
+    public void setage(int i){
+        age=i;
+    }
+    public int getage(){
+        return age;
+    }
+    public static void main(String[] args) {
+    setterANDsetter my = new setterANDsetter();
+    rectangle a= new rectangle();
+
+    int b=a.getBreadth();
+    int l= a.getLength();
+
+    int area= l*b;
+
+        System.out.println("area of the Rectangle1 = "+ area);
+
+        a.setBreadth(5);
+        a.setLength(4);
+
+        b=a.getBreadth();
+        l=a.getLength();
+
+        area= l*b;
+
+        System.out.println(area);
+
+
+        System.out.println(my.getname());
+        System.out.println(my.getage());
+
+    my.setname("Aman");
+    my.setage(21);
+
+
+        System.out.println(my.getname());
+        System.out.println(my.getage());
+
+    }
+}
