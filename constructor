@@ -1,0 +1,54 @@
+package Core_Java;
+
+public class constructor<age> {
+    String name ;
+    int age;
+
+    public constructor(){
+        name ="Your-Name";
+        age=15;
+
+    }
+    public constructor(String n, int i){
+        name =n;
+        age=i;
+    }
+    public constructor( int i){
+        name ="Your-Name";
+        age=i;
+    }
+    public constructor( String n){
+        name =n;
+        age=17;
+    }
+
+    public static void main(String[] args) {
+    constructor a= new constructor();
+
+        System.out.println(a.age);
+        System.out.println(a.name);
+        System.out.println();
+
+    constructor b=new constructor(13);
+        System.out.println(b.age);
+        System.out.println(b.name);
+        System.out.println();
+
+
+        constructor c= new constructor("sohit");
+
+        System.out.println(c.age);
+        System.out.println(c.name);
+        System.out.println();
+
+        constructor d= new constructor("gupta",6);
+
+        System.out.println(d.age);
+        System.out.println(d.name);
+        System.out.println();
+    }
+
+
+
+
+}
