@@ -1,0 +1,33 @@
+package Core_Java;
+
+class A extends Thread{
+    @Override
+    public void run() {
+        for (int i = 1; i <=10; i++) {
+            System.out.println("start Thread A for i = " + i);
+        }
+    }
+}
+class B extends Thread{
+    @Override
+    public void run() {
+        for (int j= 0; j <=10; j++) {
+            System.out.println("start Thread B for j  = " + j);
+        }
+    }
+}
+class C extends Thread{
+    @Override
+    public void run() {
+        for (int k = 0; k <=10; k++) {
+            System.out.println("start Thread C for k = " + k);
+        }
+    }
+}
+public class Mulithreading {
+    public static void main(String[] args) {
+        new A().start();
+        new B().start();
+        new C().start();
+    }
+}
